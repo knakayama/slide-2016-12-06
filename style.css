@@ -104,6 +104,10 @@ blockquote {
   z-index: 0;
 }
 
+.remark-code {
+  font-size: 1.5em;
+}
+
 img[alt=knakayama], img[alt=classmethod] {
   width: 90px;
 }

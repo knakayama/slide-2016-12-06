@@ -85,13 +85,9 @@ class: middle
                       "headers": {
                           "User-Agent": ["Test Agent"],
                           "Host" : ["d2fadu0nynjpfn.cloudfront.net"]
-                      }
-                  }
-              }
-          }
-      ]
-}
+<snip>
 ```
+
 ---
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;レスポンスオブジェクト
 
@@ -110,12 +106,7 @@ class: middle
                       "headers": {
                           "User-agent": [ "mozilla", "safari" ],
                           "Vary": [ "*" ]
-                      }
-                  }
-              }
-          }
-      ]
-  }
+<snip>
 ```
 
 ---
@@ -148,9 +139,9 @@ layout: true
 class: middle
 
 ---
-### - A/Bテスト
-### - ユーザエージェント毎に最適なオブジェクトの返却
-### - アクセスコントロール
+### - A/Bテスト<br/>&nbsp;&nbsp; - 特定のクッキーが存在した場合に返却するオブジェクトを動的に変更させる
+### - ユーザエージェント毎に最適なオブジェクトの返却<br/>&nbsp;&nbsp; - 例えばスマホならXXの解像度の画像ファイルを返すなど
+### - アクセスコントロール<br/>&nbsp;&nbsp; - ヘッダの内容に応じてオブジェクトへのアクセス権を制御
 ### - ヘッダ/URLなどの動的な変更
 
 ---
@@ -165,7 +156,7 @@ layout: true
 class: middle
 
 ---
-### - 現時点(2016/12/06)ではプレビュー扱い
+### - 現時点(2016/12/12)ではプレビュー扱い
 ### - 機能に制限あり<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Node.js 4.3のみサポート<br/>&nbsp;&nbsp;&nbsp;&nbsp;- HTTP(S)リクエスト/レスポンスヘッダの読み書き/URLの<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;書き換えのみ可(プレビュー版)<br/>&nbsp;&nbsp;&nbsp;&nbsp;- ローカルファイルシステムへの書き込み不可<br/>&nbsp;&nbsp;&nbsp;&nbsp;- there are no built-in libraries available<br/>&nbsp;&nbsp;&nbsp;&nbsp;- 最大メモリ128MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;- 最大実行時間50ms<br/>&nbsp;&nbsp;&nbsp;&nbsp;- 最大デプロイパッケージサイズ1MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;- 最大グローバルTPS 100
 
 ---
